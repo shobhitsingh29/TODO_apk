@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: auth0
+    versions:
+    - 2.32.0
+    - 2.33.0
+  - dependency-name: lodash-es
+    versions:
+    - 4.17.20
+  - dependency-name: react-navigation
+    versions:
+    - 4.4.3
